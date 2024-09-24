@@ -62,4 +62,7 @@ return {
     "stevearc/oil.nvim",
     opts = {},
   },
+  {
+    "mong8se/actually.nvim",
+  },
 }

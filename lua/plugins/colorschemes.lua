@@ -10,13 +10,15 @@ return {
     },
   },
   {
-    "LazyVim/LazyVim",
+    "folke/tokyonight.nvim",
     opts = {
-      colorscheme = "vague",
+      transparent = true,
     },
   },
   {
-    "folke/tokyonight.nvim",
-    opts = {},
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "eldritch",
+    },
   },
 }
