@@ -64,4 +64,4 @@ local opts = { noremap = true, silent = true }
 vim.api.nvim_set_keymap("n", "<Tab>", "<Cmd>BufferNext<CR>", opts)
 vim.api.nvim_set_keymap("n", "<S-Tab>", "<Cmd>BufferPrevious<CR>", opts)
 vim.api.nvim_set_keymap("n", "<leader>x", "<Cmd>BufferClose<CR>", opts)
-vim.api.nvim_set_keymap("n", "<leader>p", "<Cmd>BufferPick<CR>", opts)
+vim.api.nvim_set_keymap("n", "<leader>bp", "<Cmd>BufferPick<CR>", opts)
