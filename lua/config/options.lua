@@ -25,4 +25,4 @@ vim.opt.undodir = vim.fn.expand("~/.vim/undodir")
 vim.opt.wrap = true -- Enable line wrapping
 vim.opt.linebreak = true -- Break lines at word boundaries
 
-vim.cmd.colorscheme("catppuccin")
+vim.cmd.colorscheme("everforest")

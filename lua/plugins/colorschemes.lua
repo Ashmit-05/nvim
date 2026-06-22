@@ -18,6 +18,11 @@ return {
 	{
 		"scottmckendry/cyberdream.nvim",
 		lazy = false,
-		priority = 1000,
-	}
+	},
+	{
+		"sainnhe/gruvbox-material",
+	},
+	{
+		"sainnhe/everforest",
+	},
 }
