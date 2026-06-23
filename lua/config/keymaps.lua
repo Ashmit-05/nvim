@@ -65,3 +65,9 @@ vim.api.nvim_set_keymap("n", "<Tab>", "<Cmd>BufferNext<CR>", opts)
 vim.api.nvim_set_keymap("n", "<S-Tab>", "<Cmd>BufferPrevious<CR>", opts)
 vim.api.nvim_set_keymap("n", "<leader>x", "<Cmd>BufferClose<CR>", opts)
 vim.api.nvim_set_keymap("n", "<leader>bp", "<Cmd>BufferPick<CR>", opts)
+
+
+-- Diagnostic
+vim.api.nvim_set_keymap("n", "<leader>dl", ":Telescope diagnostics bufnr=0<CR>", { desc = "Diagnostic list in the current file" })
+vim.api.nvim_set_keymap("n", "<leader>dn", "<cmd>lua vim.diagnostic.goto_next()<CR>", { desc = "Go to next diagnostic" })
+vim.api.nvim_set_keymap("n", "<leader>dp", "<cmd>lua vim.diagnostic.goto_prev()<CR>", { desc = "Go to previous diagnostic" })

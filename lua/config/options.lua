@@ -26,3 +26,18 @@ vim.opt.wrap = true -- Enable line wrapping
 vim.opt.linebreak = true -- Break lines at word boundaries
 
 vim.cmd.colorscheme("everforest")
+
+
+-- disable diagnostics in the left column
+vim.diagnostic.config({
+  signs = false,
+})
+
+
+-- disable spell check in .md or .txt files
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "markdown", "text" },
+  callback = function()
+    vim.opt_local.spell = false
+  end,
+})
