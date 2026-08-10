@@ -3,15 +3,23 @@ return {
     "folke/noice.nvim",
     event = "VeryLazy",
     opts = {
-      routes = {
-        {
-          filter = {
-            event = "msg_show",
-            kind = "recording",
-          },
-          opts = { skip = true },
-        },
-      },
+			routes = {
+				{
+					filter = {
+						event = "msg_show",
+						kind = "recording",
+					},
+					opts = { skip = true },
+				},
+				{
+					filter = {
+						event = "lsp",
+						kind = "progress",
+						find = "basedpyright",
+					},
+					opts = { skip = true },
+				},
+			},
 			cmdline = {
 				view = "cmdline"
 			}

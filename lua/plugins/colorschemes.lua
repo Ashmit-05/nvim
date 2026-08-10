@@ -25,4 +25,10 @@ return {
 	{
 		"sainnhe/everforest",
 	},
+	{
+		"cdaddr/gentooish.vim"
+	},
+	{
+		"jpwol/thorn.nvim"
+	}
 }
